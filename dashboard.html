@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <meta charset="UTF-8">
+    <title>Smart Expense Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <nav>
+    <button onclick="logout()">Logout</button>
+        <h2>Smart Expense Manager</h2>
+    </nav>
+
+    <header><section class="hero-image">
+    <img src="https://images.unsplash.com/photo-1604594849809-dfedbc827105"
+         alt="Cash Management"
+         class="main-image">
+</section>
+
+        <h1>Track Smart. Spend Wise. Save More.</h1>
+        <p>Simple money management for everyone.</p>
+    </header>
+    <section class="hero-animated">
+    <div class="hero-text">
+        <h1>Track Smart. Spend Wise. Save More.</h1>
+        <p>Take control of your money with intelligent tracking.</p>
+    </div>
+
+    <lottie-player 
+        src="https://assets10.lottiefiles.com/packages/lf20_tfb3estd.json"
+        background="transparent"
+        speed="1"
+        style="width: 350px; height: 350px;"
+        loop
+        autoplay>
+    </lottie-player>
+</section>
+
+    <section class="budget-section">
+        <h3>Set Monthly Budget</h3>
+        <input type="number" id="budgetInput" placeholder="Enter Budget">
+        <button onclick="setBudget()">Set Budget</button>
+        <p id="budgetStatus"></p>
+        <div class="progress-bar">
+            <div class="budget-bar">
+    <div class="budget-fill" id="budgetFill"></div>
+</div>
+            <div id="progress"></div>
+            <div class="budget-animation">
+    <div class="progress-bar" id="progressBar"></div>
+</div>
+
+<p id="percentText">0%</p>
+
+<p id="percentText">0%</p>
+        </div>
+    
+
+        <p class="percentage"><span id="budgetPercent">0</span>% Used</p>
+    </div>
+</section>
+        <h4>Set Alert Percentage</h4>
+<input type="number" id="alertPercent" placeholder="Enter alert % (e.g. 80)">
+<button onclick="setAlert()">Set Alert</button>
+    </section>
+
+    <section class="expense-section"><img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f"
+     alt="Expense Tracking"
+     class="feature-img">
+     <h2>Total Expense</h2>
+<p class="total-expense">₹ <span id="expenseAmount">0</span></p>
+
+        <h3>Add Daily Expense</h3>
+        <input type="number" id="amount" placeholder="Amount">
+        <select id="category">
+            <option>Food</option>
+            <option>Travel</option>
+            <option>Bills</option>
+            <option>Shopping</option>
+            <option>Health</option>
+            <option>Others</option>
+        </select>
+        <button onclick="addExpense()">Add Expense</button>
+        </section>
+    <section class="saving-goal">
+    <h2>🎯 Saving Goal</h2>
+
+
+    <!-- Piggy Bank Animation -->
+    <lottie-player 
+        id="piggyAnimation"
+        src="https://assets1.lottiefiles.com/packages/lf20_puciaact.json"
+        background="transparent"
+        speed="1"
+        style="width: 260px; height: 260px; margin:auto;"
+        loop
+        autoplay>
+    </lottie-player>
+
+    <div class="goal-input-area">
+        <input type="number" id="goalInput" placeholder="Enter Saving Goal">
+        <button onclick="setSavingGoal()">Set Goal</button>
+    </div>
+
+    <h4>Current Savings: ₹ <span id="currentSavings">0</span></h4>
+
+
+    <p id="goalStatusMessage"></p>
+</section>
+    
+    
+    <section class="monthly-report">
+    <h2>📊 Monthly Expense Report</h2>
+
+    <!-- Analytics Animation -->
+    <lottie-player 
+        src="https://assets9.lottiefiles.com/packages/lf20_qp1q7mct.json"
+        background="transparent"
+        speed="1"
+        style="width: 260px; height: 260px; margin:auto;"
+        loop
+        autoplay>
+    </lottie-player>
+
+    <div class="report-controls">
+        <input type="month" id="monthPicker">
+        <button onclick="generateMonthlyReport()">Generate Report</button>
+    </div>
+
+    <div class="report-summary">
+        <h4>Total Spent: ₹ <span id="monthlyTotal">0</span></h4>
+        <h4>Number of Expenses: <span id="expenseCount">0</span></h4>
+    </div>
+</section>
+    
+
+    <section class="summary">
+        <h3>Total Expenses: ₹ <span id="total">0</span></h3>
+        <canvas id="pieChart"></canvas>
+    </section>
+
+    <footer>
+        <p>© 2026 Smart Expense Manager</p>
+    </footer>
+
+<script src="script.js"></script>
+<script src="auth.js"></script>
+</body>
+</html>

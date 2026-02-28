@@ -1,0 +1,267 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #d9f2ff, #e6ffe6);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav {
+    background: #2eb160;
+    color: white;
+    padding: 15px;
+}
+
+header {
+    padding: 20px;
+}
+
+section {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+input, select, button {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #4da6ff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3399ff;
+}
+
+.progress-bar {
+    background: #eee;
+    height: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#progress {
+    height: 100%;
+    width: 0%;
+    background: #4da6ff;
+    border-radius: 10px;
+}.auth-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.auth-container input {
+    width: 90%;
+}
+.hero-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main-image {
+    width: 80%;
+    max-height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.feature-img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.hero-animated {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 400px;
+}
+
+section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.savings-section {
+    text-align: center;
+}
+
+.savings-section lottie-player {
+    margin: 0 auto 20px auto;
+    display: block;
+}
+.savings-section {
+    background: white;
+    margin: 20px auto;
+    padding: 30px;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.goal-inputs input {
+    padding: 10px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.goal-inputs button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: #00c853;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.progress-bar {
+    background: #eee;
+    height: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+#goalBar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(to right, #00c853, #64dd17);
+    transition: width 0.5s ease-in-out;
+}
+.monthly-report {
+    background: white;
+    margin: 20px auto;
+    padding: 30px;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.report-controls input {
+    padding: 10px;
+    width: 180px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+
+.report-controls button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: #4da6ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.report-summary {
+    margin-top: 15px;
+}
+
+.monthly-report {
+    animation: fadeIn 1s ease-in-out;
+}
+.saving-goal {
+    background: white;
+    width: 80%;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.goal-input-area input {
+    padding: 10px;
+    width: 220px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+
+.goal-input-area button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: #00c853;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.
+
+goalProgressBar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #00c853, #64dd17);
+    transition: width 0.6s ease-in-out;
+.budget-animation {
+    width: 300px;
+    height: 20px;
+    background: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 30px auto;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #4CAF50, #2ecc71);
+    border-radius: 20px;
+    transition: width 2s ease-in-out;
+}
+
+#percentText {
+    text-align: center;
+    background: #e0e0e0;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 30px auto;
+}
+}
+.budget-bar {
+    width: 300px;
+    height: 20px;
+    background: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.budget-fill {
+    height: 100%;
+    width: 0%;  /* Important: start from 0 */
+    background: linear-gradient(90deg, #4CAF50, #2ecc71);
+    border-radius: 20px;
+    transition: width 2s ease;  /* This creates animation */
+}
