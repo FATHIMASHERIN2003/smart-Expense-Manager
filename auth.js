@@ -36,7 +36,7 @@ function login() {
     if (validUser) {
         localStorage.setItem("loggedInUser", username);
         alert("Login successful!");
-        window.location.href = "dashboard.html";
+        window.location.href = "index.html";
     } else {
         alert("Invalid credentials!");
     }
@@ -48,9 +48,10 @@ function logout() {
 }
 
 // Protect dashboard
-if (window.location.pathname.includes("dashboard.html")) {
+if (window.location.pathname.includes("index.html")) {
     let loggedInUser = localStorage.getItem("loggedInUser");
     if (!loggedInUser) {
         window.location.href = "login.html";
     }
+
 }
